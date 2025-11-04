@@ -1,0 +1,17 @@
+2025-11-02 15:35:58,472 - INFO - \U0001f6e0\ufe0f Ensured database 'vendor_db' exists.
+2025-11-02 16:31:49,379 - ERROR - No such comm target registered: jupyter.widget.control
+2025-11-02 16:31:49,386 - WARNING - No such comm: 2ba660ae-8c05-4a11-8fe8-04fe8e234dac
+2025-11-02 17:53:05,230 - ERROR - No such comm target registered: jupyter.widget.control
+2025-11-02 17:53:05,238 - WARNING - No such comm: affd319b-14af-4331-8a8e-3f40728cb2f5
+2025-11-02 17:55:21,555 - INFO - \U0001f6e0\ufe0f Ensured database 'vendor_db' exists.
+2025-11-02 17:55:34,895 - INFO - \U0001f6e0\ufe0f Ensured database 'vendor_db' exists.
+2025-11-02 17:55:50,969 - INFO -  Starting vendor data ingestion pipeline...
+2025-11-02 17:55:50,973 - INFO - Starting ingestion for table: begin_inventory
+2025-11-02 17:56:22,803 - INFO - \u2705 Completed ingestion for 'begin_inventory': 206,529 rows across 5 chunks in 31.83s (6,489 rows/sec)
+2025-11-02 17:56:22,806 - INFO - Starting ingestion for table: end_inventory
+2025-11-02 17:56:58,807 - INFO - \u2705 Completed ingestion for 'end_inventory': 224,489 rows across 5 chunks in 36.00s (6,236 rows/sec)
+2025-11-02 17:56:58,811 - INFO - Starting ingestion for table: purchases
+2025-11-02 18:09:42,836 - INFO - \u2705 Completed ingestion for 'purchases': 2,372,474 rows across 48 chunks in 764.02s (3,105 rows/sec)
+2025-11-02 18:09:42,849 - INFO - Starting ingestion for table: purchase_prices
+2025-11-02 18:09:45,792 - INFO - \u2705 Completed ingestion for 'purchase_prices': 12,261 rows across 1 chunks in 2.94s (4,168 rows/sec)
+2025-11-02 18:09:45,797 - INFO - Starting ingestion for table: sales

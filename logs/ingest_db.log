@@ -1,0 +1,64 @@
+2025-11-03 19:39:46,280 - INFO - Logging initialized successfully.
+2025-11-03 19:39:51,691 - INFO - Logging initialized successfully.
+2025-11-03 19:39:53,627 - INFO - SELECT DATABASE()
+2025-11-03 19:39:53,630 - INFO - [raw sql] {}
+2025-11-03 19:39:53,635 - INFO - SELECT @@sql_mode
+2025-11-03 19:39:53,637 - INFO - [raw sql] {}
+2025-11-03 19:39:53,642 - INFO - SELECT @@lower_case_table_names
+2025-11-03 19:39:53,645 - INFO - [raw sql] {}
+2025-11-03 19:39:53,650 - INFO - BEGIN (implicit)
+2025-11-03 19:39:53,654 - INFO - CREATE DATABASE IF NOT EXISTS vendor_db
+2025-11-03 19:39:53,656 - INFO - [generated in 0.00540s] {}
+2025-11-03 19:39:53,669 - INFO - Ensured database 'vendor_db' exists.
+2025-11-03 19:39:53,671 - INFO - ROLLBACK
+2025-11-03 19:42:10,086 - INFO - Logging initialized successfully.
+2025-11-03 19:42:13,129 - INFO - Logging initialized successfully.
+2025-11-03 19:42:15,815 - INFO - SELECT DATABASE()
+2025-11-03 19:42:15,817 - INFO - [raw sql] {}
+2025-11-03 19:42:15,820 - INFO - SELECT @@sql_mode
+2025-11-03 19:42:15,821 - INFO - [raw sql] {}
+2025-11-03 19:42:15,824 - INFO - SELECT @@lower_case_table_names
+2025-11-03 19:42:15,825 - INFO - [raw sql] {}
+2025-11-03 19:42:15,828 - INFO - BEGIN (implicit)
+2025-11-03 19:42:15,830 - INFO - CREATE DATABASE IF NOT EXISTS vendor_db
+2025-11-03 19:42:15,831 - INFO - [generated in 0.00284s] {}
+2025-11-03 19:42:15,835 - INFO - Ensured database 'vendor_db' exists.
+2025-11-03 19:42:15,837 - INFO - ROLLBACK
+2025-11-03 19:42:32,558 - INFO -  Starting full bulk ingestion process...
+2025-11-03 19:42:32,560 - INFO -  Processing file: begin_inventory.csv
+2025-11-03 19:42:32,561 - INFO -  Starting bulk load for table: begin_inventory
+2025-11-03 19:42:32,567 - INFO - SELECT DATABASE()
+2025-11-03 19:42:32,568 - INFO - [raw sql] {}
+2025-11-03 19:42:32,571 - INFO - SELECT @@sql_mode
+2025-11-03 19:42:32,573 - INFO - [raw sql] {}
+2025-11-03 19:42:32,575 - INFO - SELECT @@lower_case_table_names
+2025-11-03 19:42:32,576 - INFO - [raw sql] {}
+2025-11-03 19:42:32,628 - INFO - Inferred schema for 'begin_inventory.csv': {'InventoryId': 'VARCHAR(255)', 'Store': 'BIGINT', 'City': 'VARCHAR(255)', 'Brand': 'BIGINT', 'Description': 'VARCHAR(255)', 'Size': 'VARCHAR(255)', 'onHand': 'BIGINT', 'Price': 'DOUBLE', 'startDate': 'VARCHAR(255)'}
+2025-11-03 19:42:32,675 - INFO - Created table `begin_inventory` automatically with inferred schema.
+2025-11-03 19:42:37,791 - INFO -  Bulk loaded `begin_inventory` successfully in 5.23s
+2025-11-03 19:42:37,795 - INFO -  Processing file: end_inventory.csv
+2025-11-03 19:42:37,796 - INFO -  Starting bulk load for table: end_inventory
+2025-11-03 19:42:37,824 - INFO - Inferred schema for 'end_inventory.csv': {'InventoryId': 'VARCHAR(255)', 'Store': 'BIGINT', 'City': 'VARCHAR(255)', 'Brand': 'BIGINT', 'Description': 'VARCHAR(255)', 'Size': 'VARCHAR(255)', 'onHand': 'BIGINT', 'Price': 'DOUBLE', 'endDate': 'VARCHAR(255)'}
+2025-11-03 19:42:37,864 - INFO - Created table `end_inventory` automatically with inferred schema.
+2025-11-03 19:42:44,210 - INFO -  Bulk loaded `end_inventory` successfully in 6.41s
+2025-11-03 19:42:44,212 - INFO -  Processing file: purchases.csv
+2025-11-03 19:42:44,213 - INFO -  Starting bulk load for table: purchases
+2025-11-03 19:42:44,246 - INFO - Inferred schema for 'purchases.csv': {'InventoryId': 'VARCHAR(255)', 'Store': 'BIGINT', 'Brand': 'BIGINT', 'Description': 'VARCHAR(255)', 'Size': 'VARCHAR(255)', 'VendorNumber': 'BIGINT', 'VendorName': 'VARCHAR(255)', 'PONumber': 'BIGINT', 'PODate': 'VARCHAR(255)', 'ReceivingDate': 'VARCHAR(255)', 'InvoiceDate': 'VARCHAR(255)', 'PayDate': 'VARCHAR(255)', 'PurchasePrice': 'DOUBLE', 'Quantity': 'BIGINT', 'Dollars': 'DOUBLE', 'Classification': 'BIGINT'}
+2025-11-03 19:42:44,287 - INFO - Created table `purchases` automatically with inferred schema.
+2025-11-03 19:44:20,043 - INFO -  Bulk loaded `purchases` successfully in 95.83s
+2025-11-03 19:44:20,049 - INFO -  Processing file: purchase_prices.csv
+2025-11-03 19:44:20,053 - INFO -  Starting bulk load for table: purchase_prices
+2025-11-03 19:44:20,113 - INFO - Inferred schema for 'purchase_prices.csv': {'Brand': 'BIGINT', 'Description': 'VARCHAR(255)', 'Price': 'DOUBLE', 'Size': 'VARCHAR(255)', 'Volume': 'VARCHAR(255)', 'Classification': 'BIGINT', 'PurchasePrice': 'DOUBLE', 'VendorNumber': 'BIGINT', 'VendorName': 'VARCHAR(255)'}
+2025-11-03 19:44:20,369 - INFO - Created table `purchase_prices` automatically with inferred schema.
+2025-11-03 19:44:21,243 - INFO -  Bulk loaded `purchase_prices` successfully in 1.18s
+2025-11-03 19:44:21,247 - INFO -  Processing file: sales.csv
+2025-11-03 19:44:21,250 - INFO -  Starting bulk load for table: sales
+2025-11-03 19:44:21,307 - INFO - Inferred schema for 'sales.csv': {'InventoryId': 'VARCHAR(255)', 'Store': 'BIGINT', 'Brand': 'BIGINT', 'Description': 'VARCHAR(255)', 'Size': 'VARCHAR(255)', 'SalesQuantity': 'BIGINT', 'SalesDollars': 'DOUBLE', 'SalesPrice': 'DOUBLE', 'SalesDate': 'VARCHAR(255)', 'Volume': 'DOUBLE', 'Classification': 'BIGINT', 'ExciseTax': 'DOUBLE', 'VendorNo': 'BIGINT', 'VendorName': 'VARCHAR(255)'}
+2025-11-03 19:44:21,388 - INFO - Created table `sales` automatically with inferred schema.
+2025-11-03 19:52:38,768 - INFO -  Bulk loaded `sales` successfully in 497.51s
+2025-11-03 19:52:38,772 - INFO -  Processing file: vendor_invoice.csv
+2025-11-03 19:52:38,775 - INFO -  Starting bulk load for table: vendor_invoice
+2025-11-03 19:52:38,925 - INFO - Inferred schema for 'vendor_invoice.csv': {'VendorNumber': 'BIGINT', 'VendorName': 'VARCHAR(255)', 'InvoiceDate': 'VARCHAR(255)', 'PONumber': 'BIGINT', 'PODate': 'VARCHAR(255)', 'PayDate': 'VARCHAR(255)', 'Quantity': 'BIGINT', 'Dollars': 'DOUBLE', 'Freight': 'DOUBLE', 'Approval': 'VARCHAR(255)'}
+2025-11-03 19:52:39,085 - INFO - Created table `vendor_invoice` automatically with inferred schema.
+2025-11-03 19:52:40,394 - INFO -  Bulk loaded `vendor_invoice` successfully in 1.62s
+2025-11-03 19:52:40,396 - INFO -  All CSVs ingested in 607.84s total.

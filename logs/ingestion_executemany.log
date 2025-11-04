@@ -1,0 +1,16 @@
+2025-11-01 22:51:22,799 - INFO - \U0001f680 Starting ingestion for: begin_inventory
+2025-11-01 22:53:45,336 - INFO - \U0001f6e0\ufe0f Ensured database 'vendor_db' exists.
+2025-11-01 22:54:18,691 - INFO - \U0001f680 Starting ingestion for: begin_inventory
+2025-11-01 22:54:19,501 - ERROR - \u274c Failed to load 'begin_inventory': (1146, "Table 'vendor_db.begin_inventory' doesn't exist")
+2025-11-01 22:54:19,523 - INFO - \U0001f680 Starting ingestion for: end_inventory
+2025-11-01 22:54:20,086 - ERROR - \u274c Failed to load 'end_inventory': (1146, "Table 'vendor_db.end_inventory' doesn't exist")
+2025-11-01 22:54:20,117 - INFO - \U0001f680 Starting ingestion for: purchases
+2025-11-01 22:54:20,899 - ERROR - \u274c Failed to load 'purchases': (1146, "Table 'vendor_db.purchases' doesn't exist")
+2025-11-01 22:54:20,929 - INFO - \U0001f680 Starting ingestion for: purchase_prices
+2025-11-01 22:54:21,364 - ERROR - \u274c Failed to load 'purchase_prices': (1146, "Table 'vendor_db.purchase_prices' doesn't exist")
+2025-11-01 22:54:21,368 - INFO - \U0001f680 Starting ingestion for: sales
+2025-11-01 22:54:22,140 - ERROR - \u274c Failed to load 'sales': (1146, "Table 'vendor_db.sales' doesn't exist")
+2025-11-01 22:54:22,161 - INFO - \U0001f680 Starting ingestion for: vendor_invoice
+2025-11-01 22:54:22,422 - ERROR - \u274c Failed to load 'vendor_invoice': (1146, "Table 'vendor_db.vendor_invoice' doesn't exist")
+2025-11-02 18:25:28,092 - ERROR - No such comm target registered: jupyter.widget.control
+2025-11-02 18:25:28,236 - WARNING - No such comm: 12ad9963-c94f-4eab-a159-73e07d3c1e44
