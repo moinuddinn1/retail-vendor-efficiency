@@ -67,7 +67,7 @@ vendor-performance-analysis/
 │
 ├── scripts/
 │ ├── ingest_db.py
-│ └── get_vendor_summary.py
+│ └── vendor_sales_summary.py
 │
 └── dashboard/
 └── vendor_performance_dashboard.pbix
