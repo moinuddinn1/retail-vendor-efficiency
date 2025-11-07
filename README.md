@@ -62,11 +62,11 @@ vendor-performance-analysis/
 ├── Vendor Performance Report.pdf
 │
 ├── notebooks/
-│ ├── exploratory_data_analysis.ipynb
-│ └── vendor_performance_analysis.ipynb
+│ ├── Exploratory data anlaysis.ipynb
+│ └── Vendor Performance Analysis.ipynb
 │
 ├── scripts/
-│ ├── ingestion_db.py
+│ ├── ingest_db.py
 │ └── get_vendor_summary.py
 │
 └── dashboard/
