@@ -1,10 +1,10 @@
-# 🏪 Vendor Performance Analysis | Retail Inventory & Sales
+# Vendor Performance Analysis | Retail Inventory & Sales
 
 **Analyzing vendor efficiency and profitability to support strategic purchasing and inventory decisions using SQL, Python, and Power BI.**
 
 ---
 
-## 📑 Table of Contents
+##  Table of Contents
 - [Overview](#overview)
 - [Business Problem](#business-problem)
 - [Dataset](#dataset)
@@ -20,13 +20,13 @@
 
 ---
 
-## 🔍 Overview
+##  Overview
 This project evaluates vendor performance and retail inventory dynamics to drive strategic insights for purchasing, pricing, and inventory optimization.  
 A complete data pipeline was built using **SQL** for ETL, **Python** for analysis and hypothesis testing, and **Power BI** for visualization.
 
 ---
 
-## 💼 Business Problem
+##  Business Problem
 Effective inventory and sales management are critical in the retail sector.  
 This project aims to:
 
@@ -38,13 +38,13 @@ This project aims to:
 
 ---
 
-## 🧾 Dataset
+##  Dataset
 - Multiple CSV files located in `/data/` folder (sales, vendors, inventory)  
 - Summary table created from ingested data and used for analysis  
 
 ---
 
-## 🧰 Tools & Technologies
+##  Tools & Technologies
 - **SQL:** Common Table Expressions, Joins, Filtering  
 - **Python:** Pandas, Matplotlib, Seaborn, SciPy  
 - **Power BI:** Interactive Visualizations  
@@ -52,7 +52,7 @@ This project aims to:
 
 ---
 
-## 🗂️ Project Structure
+##  Project Structure
 ```
 vendor-performance-analysis/
 │
@@ -75,7 +75,7 @@ vendor-performance-analysis/
 
 
 
-## 🧹 Data Cleaning & Preparation
+##  Data Cleaning & Preparation
 - Removed transactions with:
   - Gross Profit = 0  
   - Profit Margin = 0  
@@ -85,7 +85,7 @@ vendor-performance-analysis/
 
 ---
 
-## 📊 Exploratory Data Analysis (EDA)
+##  Exploratory Data Analysis (EDA)
 **Negative or Zero Values Detected:**
 - Gross Profit: Min = -$2,002.78 (loss-making sales)  
 - Profit Margin: Min = 1% (sales at zero or below cost)  
@@ -97,7 +97,7 @@ vendor-performance-analysis/
 
 ---
 
-## 🧩 Research Questions & Key Findings
+##  Research Questions & Key Findings
 - **Brands for Promotions:** 198 brands with low sales but high profit margins  
 - **Top Vendors:** Top 10 vendors = 65.69% of purchases (risk of over-reliance)  
 - **Bulk Purchasing Impact:** 72% cost savings per unit in large orders  
@@ -120,7 +120,7 @@ vendor-performance-analysis/
 
 ---
 
-## ⚙️ How to Run This Project
+##  How to Run This Project
 ```bash
 # 1. Clone the repository
 git clone https://github.com/yourusername/vendor-performance-analysis.git
